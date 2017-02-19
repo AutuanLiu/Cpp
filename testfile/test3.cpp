@@ -1,6 +1,6 @@
 /*
 
-//»ØÎÄÊıÅĞ¶¨
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½
 #include <iostream>
 using namespace std;
 bool symn(unsigned n){
@@ -11,7 +11,7 @@ bool symn(unsigned n){
 		i/=10;
 	}
 	return m==n;
-} 
+}
 
 int main(){
 	for(unsigned m=11;m<1000;m++)
@@ -24,71 +24,3 @@ int main(){
 }
 
 */
-
- mjnhhr
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
