@@ -3,7 +3,9 @@
 */
 
 #include <iostream>
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 double powerf(double x, unsigned n)
 {
@@ -21,6 +23,40 @@ double powerf(double x, unsigned n)
 	return ans;
 }
 
+/*
+*    递归法 求x^n
+*/
+
+double powerf2(double x, unsigned n)
+{
+	double ans = 1.0;
+
+	if (n == 0)
+	{
+		return 1;
+	}
+	else
+	{
+		return x * powerf2(x,n-1);
+	}
+}
+
+/*
+*    循环法 求x^n
+*/
+
+double powerf3(double x, unsigned n)
+{
+	double ans = 1.0;
+
+	while (n != 0)
+	{
+		ans *= x;
+		n--;
+	}
+	return ans;
+}
+
 int main()
 {
 	
@@ -28,5 +64,7 @@ int main()
 	unsigned n;
 	cin >> x >> n;
 	cout << x <<"^" << n << " = " << powerf(x,n) << endl;
+	cout << x <<"^" << n << " = " << powerf2(x,n) << endl;
+	cout << x <<"^" << n << " = " << powerf3(x,n) << endl;
 	return 0;
 }

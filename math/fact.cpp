@@ -18,3 +18,32 @@ int main()
 	cout << n <<"的阶乘为 ： " << a[n] << endl;
 	return 0;
 }
+
+/*
+* 求阶乘的 递归函数法
+*/
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+const int N = 1000;
+
+int fact2(int n)
+{
+	if(n == 0 )
+	{
+		return 1;
+	}
+	else
+	{
+		return n * fact2(n-1);
+	}
+}
+
+int main()
+{
+	int n;
+	cin >> n;
+	cout << n <<"的阶乘为 ： " << fact2(n) << endl;
+	return 0;
+}

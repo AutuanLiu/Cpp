@@ -3,10 +3,12 @@
 公式：lcm(a,b) = a * b / gcd(a,b)
 ***/
 #include <stdio.h>
+
 int gcd(int a,int b)
 {
 	return b != 0 ? gcd(b,a%b) : a;
 }
+
 int main()
 {
 	int a,b;
