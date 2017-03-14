@@ -9,6 +9,7 @@ using namespace std;
 class Student
 {
 public:
+	//初始化列表初始化
 	Student(unsigned _age = 0, string _name = "Jim"):m_age(_age),m_name(_name) //函数使用inline 模式
 	{
 		count++;

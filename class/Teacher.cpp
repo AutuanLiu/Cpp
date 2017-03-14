@@ -33,7 +33,7 @@ private:
 
 Teacher::Teacher(int _id, string _name, string _gender,
 		int _year = 1900, int _month = 0, int _day = 0,
-		int _year2, int _month2, int _day2)
+		int _year2, int _month2, int _day2)// 构造函数
 {
 	m_id = _id;
 	m_name = _name;
@@ -46,7 +46,7 @@ Teacher::Teacher(int _id, string _name, string _gender,
 	m_day2 = _day2;
 }
 
-Teacher::Teacher(Teacher &t)
+Teacher::Teacher(Teacher &t) //复制构造函数
 {
 	m_id = t.m_id;
 	m_name = t.m_name;
@@ -71,7 +71,7 @@ void Teacher::retire(const int nowyear)
 	||(m_gender == "female" && nowyear - m_year2 >= 60))
 	{
 		char id[10];
-		itoa(m_id,id,10);
+		itoa(m_id, id, 10);
 		string temp = "Name: " + m_name + ",ID:" + id;
 		cout << "to be retired : " << temp << endl;
 	}
@@ -83,7 +83,7 @@ void Teacher::recurit(int nowyear)
 		&& nowyear - m_year2 >= 60)
 	{
 		char id[10];
-		itoa(m_id,id,10);
+		itoa(m_id, id, 10);
 		string temp = "Name: " + m_name + ",ID:" + id;
 		cout << "to be recurited : " << temp << endl;
 	}
@@ -91,10 +91,11 @@ void Teacher::recurit(int nowyear)
 
 int main()
 {
-	Teacher l1(1, "lily", "female",1975,3,18,1950,2,3);
-	Teacher l2(2, "long", "male",1986,11,5,1950,6,9);
-	Teacher l3(3, "yang", "female",2005,3,6,1950,5,9);
-	Teacher l4(4, "gong", "female",1995,6,8,1945,2,8);
+	//构建对象
+	Teacher l1(1, "lily", "female", 1975, 3, 18, 1950, 2, 3);
+	Teacher l2(2, "long", "male", 1986, 11, 5, 1950, 6, 9);
+	Teacher l3(3, "yang", "female", 2005, 3, 6, 1950, 5, 9);
+	Teacher l4(4, "gong", "female", 1995 , 6, 8, 1945 , 2 ,8);
 	Teacher copyl1(l1);
 	cout << l1 << endl << copyl1 << endl;
 	l1.retire(2017);// for test
